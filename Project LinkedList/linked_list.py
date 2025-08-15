@@ -26,6 +26,8 @@ class LinkedList:
         
         #Once the while loop finishes current should be a node, with nothing coming next (aka the end)
         current.next = new_node
+        
+        print(f"Appended: {new_node.data.name}")
 
 
     def traverse(self):
@@ -76,23 +78,23 @@ class LinkedList:
 
 
 
-songs = LinkedList()
-print(songs.is_empty())
+# songs = LinkedList()
+# print(songs.is_empty())
 
-songs.append("Blue")
-songs.append("Twisting Fingers")
-songs.append("Baby Shark")
-songs.append("Nothing Else Matters")
-songs.append("Enter Sandman")
-songs.append("Smurf Theme")
-songs.append("Chill Beats")
+# songs.append("Blue")
+# songs.append("Twisting Fingers")
+# songs.append("Baby Shark")
+# songs.append("Nothing Else Matters")
+# songs.append("Enter Sandman")
+# songs.append("Smurf Theme")
+# songs.append("Chill Beats")
 
-songs.traverse()
+# songs.traverse()
 
-songs.insert_at_position(2,"Orange Blossoms")
+# songs.insert_at_position(2,"Orange Blossoms")
 
-songs.traverse()
-print(songs.get_at_position(4))
+# songs.traverse()
+# print(songs.get_at_position(4))
 
-songs.delete_at_position(1)
-songs.traverse()
+# songs.delete_at_position(1)
+# songs.traverse()
